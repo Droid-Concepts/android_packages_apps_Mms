@@ -175,9 +175,6 @@
     <!-- Toast when storage is full -->
     <string name="storage_is_full">The messaging database is full. Please delete some conversations.</string>
 
-    <!-- Context menu item on an failed message for resending -->
-    <string name="menu_resend">Resend</string>
-
     <!-- Multi recipients -->
     <string name="select_recipients">Select recipients</string>
     <string name="groups_header">Groups</string>
