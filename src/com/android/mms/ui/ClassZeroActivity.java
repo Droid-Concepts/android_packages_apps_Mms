@@ -163,7 +163,8 @@ public class ClassZeroActivity extends Activity {
         // to work-around a bug in AlertDialog. This needs to be fixed later when
         // Android fixes the bug in AlertDialog.
         if (message.length() < BUFFER_OFFSET) messageChars = BUFFER + message + BUFFER;
-        mDialog = new AlertDialog.Builder(this).setMessage(message)
+        long now = SystemClock.uptimeMillis();
+        mDialog = new AlertDialog.Builder(this, AlertDialog.THEME_HOLO_DARK).setMessage(messageChars)
                 .setPositiveButton(R.string.save, mSaveListener)
                 .setNegativeButton(android.R.string.cancel, mCancelListener)
                 .setCancelable(false).show();
