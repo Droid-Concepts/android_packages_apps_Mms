@@ -3963,7 +3963,6 @@ public class ComposeMessageActivity extends Activity
 
             // strip unicode chars before sending (if applicable)
             mWorkingMessage.setText(stripUnicodeIfRequested(mWorkingMessage.getText()));
-            mWorkingMessage.send(mDebugRecipients);
             if (mWorkingMessage.getResendMultiRecipients()) {
                 // if resend sms recipient is more than one, use mResendSmsRecipient
                 mWorkingMessage.send(mResendSmsRecipient);
